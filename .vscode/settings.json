@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "i2c.h": "c",
+        "sensores.h": "c",
+        "task.h": "c",
+        "c": "c"
+    },
+    "idf.pythonInstallPath": "C:\\Espressif\\tools\\tools\\idf-python\\3.11.2\\python.exe",
+    "idf.portWin": "COM5",
+    "idf.currentSetup": "C:/Espressif/frameworks/esp-idf-v5.4.1/"
+}
