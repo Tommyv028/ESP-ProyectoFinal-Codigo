@@ -6,6 +6,6 @@
 void iniciar_logger(void);
 void leer_log(void);
 void borrar_log(void);
-void guardar_datos(datos_sensores_t data);
+void guardar_datos(datos_sensores_t datos);
 
 #endif

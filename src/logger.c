@@ -67,7 +67,7 @@ void borrar_log(void) {
     xSemaphoreGive(log_mutex);
 }
 
-void guardar_datos(datos_sensores_t data) {
+void guardar_datos(datos_sensores_t datos) {
    if (xSemaphoreTake(log_mutex, portMAX_DELAY) != pdTRUE) return;
 
     FILE *f = fopen("/spiffs/datos.txt", "a");
@@ -78,8 +78,8 @@ void guardar_datos(datos_sensores_t data) {
     }
 
     fprintf(f, "temp:%.2f hum:%.2f pres:%.2f lux:%.2f ruido:%.0f tPPM:%.2f\n",
-        data.temperatura, data.humedad, data.presion,
-        data.luz, data.ruido, data.tolueno);
+        datos.temperatura, datos.humedad, datos.presion,
+        datos.luz, datos.ruido, datos.tolueno);
     fclose(f);
 
     xSemaphoreGive(log_mutex);

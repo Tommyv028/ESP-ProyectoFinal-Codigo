@@ -41,11 +41,11 @@ static bmp180_calib_data_t bmp180_calib_data;
 
 // Prototipos para funciones internas
 static void bmp180_leer_datos_calibracion(void);
-static void leer_aht25(datos_sensores_t *data);
-static void leer_bmp180(datos_sensores_t *data);
-static void leer_bh1750(datos_sensores_t *data);
-static void leer_ruido(datos_sensores_t *data);
-static void leer_tolueno(datos_sensores_t *data);
+static void leer_aht25(datos_sensores_t *datos);
+static void leer_bmp180(datos_sensores_t *datos);
+static void leer_bh1750(datos_sensores_t *datos);
+static void leer_ruido(datos_sensores_t *datos);
+static void leer_tolueno(datos_sensores_t *datos);
 
 
 
