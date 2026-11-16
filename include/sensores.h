@@ -9,8 +9,6 @@
 #define BMP180_ADDRESS 0x77
 #define BH1750_ADDRESS 0x23
 
-#define SENSOR_TOLUENO_ADC ADC1_CHANNEL_0 // GPIO36
-
 typedef enum {
     SENSOR_AHT25  = 1 << 0,
     SENSOR_BMP180 = 1 << 1,
